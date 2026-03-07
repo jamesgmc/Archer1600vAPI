@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  app:
+    image: jamesgm/archer1600vapi:latest
+    ports:
+      - "3000:3000"
+    environment:
+      - ROUTER_USERNAME=${ROUTER_USERNAME}
+      - ROUTER_PASSWORD=${ROUTER_PASSWORD}
+      - ROUTER_URI=${ROUTER_URI}
